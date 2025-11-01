@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ShoppingBag, Search } from "lucide-react"
+import { Button } from "../ui/button"
 
 export function Header() {
   return (
@@ -23,16 +24,16 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <button className="hidden sm:flex">
+            <Button variant="ghost" size="icon" className="hidden sm:flex">
               <Search className="h-5 w-5" />
               <span className="sr-only">Buscar</span>
-            </button>
-            <button>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
               <Link href="/carrito">
                 <ShoppingBag className="h-5 w-5" />
                 <span className="sr-only">Carrito</span>
               </Link>
-            </button>
+            </Button>
           </div>
         </div>
       </div>
