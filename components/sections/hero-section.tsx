@@ -5,6 +5,7 @@ import Link from "next/link"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import atletaImg from "@/public/atleta-corriendo-en-ciudad-moderna-al-amanecer.jpg"
+import { Button } from "../ui/button"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -185,20 +186,19 @@ export function HeroSection() {
             avanzada, estilo inigualable.
           </p>
           
-          <div className="hero-buttons flex flex-col sm:flex-row gap-4">
-            <Link 
-              href="/productos"
-              className="inline-flex items-center justify-center h-14 px-8 text-base font-bold bg-linear-to-r from-orange-500 to-red-600 text-white rounded-lg hover:from-orange-600 hover:to-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Explorar Colección
-            </Link>
-            <Link
-              href="/productos?categoria=nuevo"
-              className="inline-flex items-center justify-center h-14 px-8 text-base font-bold border-2 border-white text-white rounded-lg hover:bg-white hover:text-black bg-transparent transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Ver Novedades
-            </Link>
-          </div>
+           <div className="hero-buttons flex flex-col sm:flex-row gap-4">
+                <Button size="lg" asChild className="h-14 px-8 text-base font-bold bg-accent hover:bg-accent/90">
+                  <Link href="/productos">Explorar Colección</Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
+                  className="h-14 px-8 text-base font-bold border-2 border-white text-white hover:bg-white hover:text-black bg-transparent"
+                >
+                  <Link href="/productos?categoria=nuevo">Ver Novedades</Link>
+                </Button>
+            </div>
         </div>
       </div>
     </section>
