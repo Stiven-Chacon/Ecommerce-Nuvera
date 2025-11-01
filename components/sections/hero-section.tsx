@@ -84,7 +84,7 @@ export function HeroSection() {
           "-=0.6"
         )
         .from(
-          ".hero-buttons > *",
+          ".hero-buttons",
           {
             opacity: 0,
             y: 30,
@@ -112,24 +112,6 @@ export function HeroSection() {
         ease: "none",
       })
 
-      // Hover effects para botones
-      const buttons = document.querySelectorAll(".hero-buttons a")
-      buttons.forEach((button) => {
-        button.addEventListener("mouseenter", () => {
-          gsap.to(button, {
-            scale: 1.05,
-            duration: 0.3,
-            ease: "power2.out",
-          })
-        })
-        button.addEventListener("mouseleave", () => {
-          gsap.to(button, {
-            scale: 1,
-            duration: 0.3,
-            ease: "power2.out",
-          })
-        })
-      })
 
     }, heroRef)
 
@@ -141,7 +123,6 @@ export function HeroSection() {
       ref={heroRef}
       className="hero-section relative min-h-[90vh] flex items-center overflow-hidden"
     >
-      {/* Imagen de fondo mejorada */}
       <div className="absolute inset-0 hero-image">
         <div ref={imageRef} className="relative w-full h-full scale-100">
           <Image
@@ -156,19 +137,15 @@ export function HeroSection() {
         </div>
       </div>
       
-      {/* Overlay mejorado */}
       <div 
         ref={overlayRef}
         className="absolute inset-0 bg-linear-to-r from-black/85 via-black/60 to-transparent"
       />
 
-      {/* Contenido */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <div className="hero-badge inline-block mb-6 px-5 py-2.5 bg-accent/20 border border-accent/50 rounded-full backdrop-blur-sm">
-            <span className="text-accent font-bold text-sm tracking-wider">
-              ✨ NUEVA COLECCIÓN 2025
-            </span>
+          <div className="hero-badge inline-block mb-4 px-4 py-2 bg-accent/20 border border-accent rounded-full">
+            <span className="text-accent font-bold text-sm tracking-wider">NUEVA COLECCIÓN 2026</span>
           </div>
           
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight text-balance">
