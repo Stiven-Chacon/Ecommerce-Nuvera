@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Nuvéra - Tu tienda de moda en línea",
   description: "Descubre las últimas tendencias en moda con Nuvéra. Ropa, accesorios y más para todos los estilos.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
