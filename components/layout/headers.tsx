@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ShoppingBag, Search } from "lucide-react"
 import { Button } from "../ui/button"
+import { UserMenu } from "../user-menu"
 
 export function Header() {
   return (
@@ -28,6 +29,7 @@ export function Header() {
               <Search className="h-5 w-5" />
               <span className="sr-only">Buscar</span>
             </Button>
+            <UserMenu  />
             <Button variant="ghost" size="icon" asChild>
               <Link href="/carrito">
                 <ShoppingBag className="h-5 w-5" />
