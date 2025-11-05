@@ -148,7 +148,7 @@ export function HeroSection() {
             <span className="text-accent font-bold text-sm tracking-wider">NUEVA COLECCIÓN 2026</span>
           </div>
           
-          <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight text-balance">
+          <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight text-balance text-red-300">
             SUPERA TUS{" "}
             <span 
               className="text-gradient block bg-linear-to-r from-accent via-purple-500 to-accent bg-clip-text text-transparent"
