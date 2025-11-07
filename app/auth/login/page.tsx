@@ -116,7 +116,7 @@ export default function LoginPage() {
 
           <div className="mt-6 text-center text-sm">
             <span className="text-muted-foreground">¿No tienes cuenta? </span>
-            <Link href="/auth/registro" className="font-bold hover:text-accent transition-colors">
+            <Link href="/auth/register" className="font-bold hover:text-accent transition-colors">
               Regístrate
             </Link>
           </div>
