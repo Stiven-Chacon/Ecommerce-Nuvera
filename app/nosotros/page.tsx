@@ -4,6 +4,7 @@
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { Header } from "@/components/layout/headers"
+import { Footer } from "@/components/layout/footer"
 
 
 
@@ -61,7 +62,7 @@ export default function NosotrosPage() {
         </section>
 
       </main>
-
+    <Footer />
     </div>
   )
 }
