@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { Header } from "@/components/layout/headers"
 import { Footer } from "@/components/layout/footer"
+import { StorySection } from "@/components/sections/nosotros/StorySection"
 
 
 
@@ -61,6 +62,8 @@ export default function NosotrosPage() {
           </div>
         </section>
 
+        {/* Story Section */}
+        <StorySection />
       </main>
     <Footer />
     </div>
