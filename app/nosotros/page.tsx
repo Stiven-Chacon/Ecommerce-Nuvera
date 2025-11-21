@@ -64,7 +64,14 @@ export default function NosotrosPage() {
         <StorySection />
 
         {/* Stats Section */}
-        <StatsSection />
+        <StatsSection 
+          stats={[
+                { value: 7500, suffix: '+', label: 'Atletas Activos' },
+                { value: 120, suffix: '+', label: 'Países' },
+                { value: 300, suffix: '+', label: 'Productos' },
+                { value: 99, suffix: '%', label: 'Satisfacción' },
+              ]}
+        />
       </main>
     <Footer />
     </div>
