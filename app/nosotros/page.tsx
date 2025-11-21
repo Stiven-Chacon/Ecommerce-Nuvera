@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/footer"
 import { StorySection } from "@/components/sections/nosotros/StorySection"
 import StatsSection from "@/components/sections/Stats-Section"
 import ValuesSection from "@/components/sections/nosotros/CoreValuesSection"
+import CTASection from "@/components/sections/nosotros/CTASection"
 
 
 export default function NosotrosPage() {
@@ -76,6 +77,10 @@ export default function NosotrosPage() {
 
         {/* Values Section */}
         <ValuesSection />
+
+        {/* CTA Section */}
+        <CTASection />
+        
       </main>
     <Footer />
     </div>
