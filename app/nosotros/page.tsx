@@ -7,6 +7,8 @@ import { Header } from "@/components/layout/headers"
 import { Footer } from "@/components/layout/footer"
 import { StorySection } from "@/components/sections/nosotros/StorySection"
 import StatsSection from "@/components/sections/Stats-Section"
+import ValuesSection from "@/components/sections/nosotros/CoreValuesSection"
+import CTASection from "@/components/sections/nosotros/CTASection"
 
 
 export default function NosotrosPage() {
@@ -64,7 +66,21 @@ export default function NosotrosPage() {
         <StorySection />
 
         {/* Stats Section */}
-        <StatsSection />
+        <StatsSection 
+          stats={[
+                { value: 7500, suffix: '+', label: 'Atletas Activos' },
+                { value: 120, suffix: '+', label: 'Países' },
+                { value: 300, suffix: '+', label: 'Productos' },
+                { value: 99, suffix: '%', label: 'Satisfacción' },
+              ]}
+        />
+
+        {/* Values Section */}
+        <ValuesSection />
+
+        {/* CTA Section */}
+        <CTASection />
+        
       </main>
     <Footer />
     </div>
