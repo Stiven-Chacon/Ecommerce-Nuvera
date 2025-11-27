@@ -1,4 +1,5 @@
 "use client"
+import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/headers"
 import { HeroSection } from "@/components/sections/hero-section"
 import CategoryGrid from "@/components/sections/hero/CategoryGrid"
@@ -16,7 +17,9 @@ export default function HomePage() {
         
         {/* Values Section */}
         <ValuesSection />
+
       </main>
+        <Footer />
     </div>
   )
 }
