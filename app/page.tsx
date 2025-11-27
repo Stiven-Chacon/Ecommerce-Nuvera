@@ -2,7 +2,7 @@
 import { Header } from "@/components/layout/headers"
 import { HeroSection } from "@/components/sections/hero-section"
 import CategoryGrid from "@/components/sections/hero/CategoryGrid"
-import ValuesSection from "@/components/sections/nosotros/CoreValuesSection"
+import ValuesSection from "@/components/sections/hero/CoreValuesSection"
 import  StatsSection  from "@/components/sections/Stats-Section"
 
 export default function HomePage() {
