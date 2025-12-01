@@ -61,20 +61,6 @@ export default function CTASection({
         },
       });
 
-      // Animación del botón con bounce
-      gsap.from(buttonRef.current, {
-        opacity: 0,
-        scale: 0,
-        duration: 0.6,
-        delay: 0.6,
-        ease: 'back.out(1.7)',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 75%',
-          toggleActions: 'play none none none',
-        },
-      });
-
       // Efecto de pulso continuo en el botón
       gsap.to(buttonRef.current, {
         scale: 1.05,
