@@ -16,10 +16,10 @@ export function Header() {
             <Link href="/productos" className="text-sm font-medium hover:text-muted-foreground transition-colors">
               Productos
             </Link>
-            <Link href="/colecciones" className="text-sm font-medium hover:text-muted-foreground transition-colors">
+            <Link href="/collections" className="text-sm font-medium hover:text-muted-foreground transition-colors">
               Colecciones
             </Link>
-            <Link href="/nosotros" className="text-sm font-medium hover:text-muted-foreground transition-colors">
+            <Link href="/about" className="text-sm font-medium hover:text-muted-foreground transition-colors">
               Nosotros
             </Link>
           </nav>
