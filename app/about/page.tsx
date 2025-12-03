@@ -5,10 +5,10 @@ import Image from "next/image"
 import { useEffect, useRef } from "react"
 import { Header } from "@/components/layout/headers"
 import { Footer } from "@/components/layout/footer"
-import { StorySection } from "@/components/sections/nosotros/StorySection"
+import { StorySection } from "@/components/sections/about/StorySection"
 import StatsSection from "@/components/sections/Stats-Section"
-import ValuesSection from "@/components/sections/nosotros/CoreValuesSection"
-import CTASection from "@/components/sections/nosotros/CTASection"
+import ValuesSection from "@/components/sections/about/CoreValuesSection"
+import CTASection from "@/components/sections/about/CTASection"
 
 
 export default function NosotrosPage() {
