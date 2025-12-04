@@ -35,7 +35,7 @@ export function CollectionsHero() {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-black"
+      className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] flex items-center justify-center overflow-hidden bg-black"
     >
       <div className="absolute inset-0 bg-linear-to-br from-orange-600/20 via-transparent to-transparent" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,69,0,0.1),transparent_50%)]" />
@@ -43,18 +43,18 @@ export function CollectionsHero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 
           ref={titleRef} 
-          className="text-6xl md:text-8xl lg:text-9xl font-black mb-6 text-white"
+          className=" text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-4 sm:mb-6 text-white tracking-tight"
         >
           COLECCIONES
         </h1>
-        <p className="hero-subtitle text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        <p className="hero-subtitle text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto leading-relaxed px-2">
           Descubre nuestras colecciones especializadas diseñadas para cada disciplina deportiva
         </p>
       </div>
 
       {/* Decorative elements */}
-      <div className="decorative-blob absolute top-20 left-10 w-32 h-32 bg-orange-600/10 rounded-full blur-3xl" />
-      <div className="decorative-blob absolute bottom-20 right-10 w-40 h-40 bg-orange-600/10 rounded-full blur-3xl" />
+      <div className="decorative-blob absolute top-10 left-5 w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 bg-orange-600/10 rounded-full blur-3xl" />
+      <div className="decorative-blob absolute bottom-10 right-5 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 bg-orange-600/10 rounded-full blur-3xl" />
     </section>
   )
 }
