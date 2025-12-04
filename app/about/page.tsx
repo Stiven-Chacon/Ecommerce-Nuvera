@@ -43,19 +43,19 @@ export default function NosotrosPage() {
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-hidden">
         {/* Hero Section */}
-        <section ref={heroRef} className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0">
-            <Image src="/athletes-training-together-team-spirit.jpg" alt="Equipo Nuvera" fill className="object-cover opacity-30" />
+        <section ref={heroRef} className="relative min-h-[70vh] flex items-center justify-center overflow-hidden overflow-x-hidden">
+          <div className="absolute inset-0 overflow-hidden">
+            <Image src="/athletes-training-together-team-spirit.jpg" alt="Equipo Nuvera" fill className="object-cover opacity-30"/>
           </div>
           <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-background" />
 
-          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="hero-title text-6xl md:text-8xl lg:text-9xl font-black mb-6 text-white">
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center overflow-x-hidden">
+            <h1 className="hero-title text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-white">
               NUESTRA <span className="text-gradient">HISTORIA</span>
             </h1>
-            <p className="hero-text text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="hero-text text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-2">
               Nacimos de la pasión por el deporte y el deseo de crear equipamiento que inspire a los atletas a superar
               sus límites
             </p>
