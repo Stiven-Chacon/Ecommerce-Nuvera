@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/headers"
 import { Footer } from "@/components/layout/footer"
 import { CollectionsHero } from "@/components/sections/collections/CollectionsHero-section"
 import { CollectionsGrid } from "@/components/sections/collections/ColletionsCategoryGrid"
+import CTASection from "@/components/sections/collections/CTASection"
 
 export default function ColeccionesPage() {
 
@@ -18,6 +19,9 @@ export default function ColeccionesPage() {
 
         {/* Collections Grid */}
         <CollectionsGrid/>
+
+        {/* CTA Section */}
+        <CTASection/>
       </main>
 
       <Footer />
