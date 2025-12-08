@@ -23,7 +23,7 @@ export default function CTASection({
   description = "Explora todos nuestros productos o contáctanos para asesoría personalizada",
   primaryButtonText = "Ver Todos los Productos",
   primaryButtonHref = "/productos",
-  secondaryButtonText = "Conocer Más",
+  //secondaryButtonText = "Conocer Más",
   secondaryButtonHref = "/about",
   darkMode = true
 }: CTASectionProps) {
@@ -131,7 +131,7 @@ export default function CTASection({
               {primaryButtonText}
             </Button>
           </Link>
-          <Link href={secondaryButtonHref}>
+         {/*  <Link href={secondaryButtonHref}>
             <Button
               size="lg"
               variant="outline"
@@ -143,7 +143,7 @@ export default function CTASection({
             >
               {secondaryButtonText}
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
