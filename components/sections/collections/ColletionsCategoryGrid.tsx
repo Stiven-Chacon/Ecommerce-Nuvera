@@ -61,9 +61,11 @@ const collections = [
 export function CollectionsGrid() {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Collection cards stagger animation
-      gsap.utils.toArray(".collection-card").forEach((card: any, index: number) => {
-        gsap.from(card, {
+      // Animación stagger de las tarjetas
+      gsap.utils.toArray(".collection-card").forEach((card, index) => {
+        const el = card as HTMLElement
+
+        gsap.from(el, {
           opacity: 0,
           y: 80,
           scale: 0.9,
@@ -71,19 +73,22 @@ export function CollectionsGrid() {
           delay: index * 0.15,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: card,
+            trigger: el,
             start: "top 85%",
             toggleActions: "play none none reverse",
           },
         })
       })
 
-      // Parallax effect on hover
-      gsap.utils.toArray(".collection-card").forEach((card: any) => {
-        const image = card.querySelector(".collection-image")
-        const content = card.querySelector(".collection-content")
+      // Efecto parallax al hacer hover
+      gsap.utils.toArray(".collection-card").forEach((card) => {
+        const el = card as HTMLElement
+        const image = el.querySelector(".collection-image") as HTMLElement | null
+        const content = el.querySelector(".collection-content") as HTMLElement | null
 
-        card.addEventListener("mouseenter", () => {
+        if (!image || !content) return
+
+        el.addEventListener("mouseenter", () => {
           gsap.to(image, {
             scale: 1.1,
             duration: 0.6,
@@ -96,7 +101,7 @@ export function CollectionsGrid() {
           })
         })
 
-        card.addEventListener("mouseleave", () => {
+        el.addEventListener("mouseleave", () => {
           gsap.to(image, {
             scale: 1,
             duration: 0.6,

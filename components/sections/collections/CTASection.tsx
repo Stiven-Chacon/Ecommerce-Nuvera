@@ -13,8 +13,6 @@ interface CTASectionProps {
   description?: string;
   primaryButtonText?: string;
   primaryButtonHref?: string;
-  secondaryButtonText?: string;
-  secondaryButtonHref?: string;
   darkMode?: boolean;
 }
 
@@ -23,8 +21,6 @@ export default function CTASection({
   description = "Explora todos nuestros productos o contáctanos para asesoría personalizada",
   primaryButtonText = "Ver Todos los Productos",
   primaryButtonHref = "/productos",
-  //secondaryButtonText = "Conocer Más",
-  secondaryButtonHref = "/about",
   darkMode = true
 }: CTASectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
