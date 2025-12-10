@@ -1,6 +1,7 @@
 'use client';
 
 import * as LucideIcons from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 interface Benefit {
   icon: string;
@@ -31,13 +32,15 @@ const defaultBenefits: Benefit[] = [
   }
 ];
 
+// Convertimos LucideIcons con tipado seguro
+const iconMap = LucideIcons as unknown as Record<string, LucideIcon>;
+
 export default function BenefitsSection({
   benefits = defaultBenefits,
   className = ""
 }: BenefitsSectionProps) {
-  // Función para obtener el componente de icono de Lucide
   const getIcon = (iconName: string) => {
-    const Icon = (LucideIcons as any)[iconName];
+    const Icon = iconMap[iconName];
     return Icon ? <Icon className="w-8 h-8" strokeWidth={2} /> : null;
   };
 

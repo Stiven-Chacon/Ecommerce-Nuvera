@@ -3,7 +3,7 @@ import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
 import { clearUserSession, setUserSession, validateCredentials } from "../auth-simple"
 
-export async function signUp(formData: FormData) {
+export async function signUp(_formData: FormData) {
   return { error: "El registro está deshabilitado. Use las credenciales de prueba para iniciar sesión." }
 }
 
