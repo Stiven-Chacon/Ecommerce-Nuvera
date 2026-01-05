@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Zapatillas Running Pro",
+    "description": "Zapatillas de running de alto rendimiento con amortiguación avanzada y tecnología de retorno de energía. Ideales para corredores serios.",
+    "price": 149.99,
+    "category": "running",
+    "stock": 45,
+    "featured": true,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "2",
+    "name": "Camiseta Training Elite",
+    "description": "Camiseta técnica con tecnología de secado rápido y ventilación estratégica para entrenamientos intensos.",
+    "price": 39.99,
+    "category": "training",
+    "stock": 120,
+    "featured": true,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "3",
+    "name": "Pantalón Deportivo Flex",
+    "description": "Pantalón con tecnología elástica de 4 direcciones para máxima libertad de movimiento en cualquier actividad.",
+    "price": 79.99,
+    "category": "training",
+    "stock": 80,
+    "featured": true,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "4",
+    "name": "Chaqueta Outdoor Adventure",
+    "description": "Chaqueta impermeable y cortavientos perfecta para aventuras al aire libre con bolsillos funcionales.",
+    "price": 129.99,
+    "category": "outdoor",
+    "stock": 35,
+    "featured": true,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "5",
+    "name": "Mallas Yoga Premium",
+    "description": "Mallas de compresión media con cintura alta y tejido transpirable para yoga y pilates.",
+    "price": 59.99,
+    "category": "yoga",
+    "stock": 95,
+    "featured": true,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "6",
+    "name": "Zapatillas Basketball Street",
+    "description": "Zapatillas de baloncesto con suela antideslizante y soporte de tobillo para juego urbano.",
+    "price": 139.99,
+    "category": "basketball",
+    "stock": 55,
+    "featured": true,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "7",
+    "name": "Shorts Running Light",
+    "description": "Shorts ligeros con forro interior y bolsillo con cierre para entrenamientos de running.",
+    "price": 34.99,
+    "category": "running",
+    "stock": 110,
+    "featured": false,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "8",
+    "name": "Top Deportivo Impact",
+    "description": "Top deportivo de alto impacto con soporte reforzado y diseño ergonómico.",
+    "price": 44.99,
+    "category": "training",
+    "stock": 85,
+    "featured": false,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "9",
+    "name": "Mochila Outdoor 30L",
+    "description": "Mochila técnica de 30 litros con sistema de hidratación y compartimentos organizadores.",
+    "price": 89.99,
+    "category": "outdoor",
+    "stock": 40,
+    "featured": false,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "10",
+    "name": "Mat Yoga Eco",
+    "description": "Esterilla de yoga ecológica antideslizante con grosor de 6mm para mayor comodidad.",
+    "price": 49.99,
+    "category": "yoga",
+    "stock": 70,
+    "featured": false,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "11",
+    "name": "Jersey Basketball Pro",
+    "description": "Jersey de baloncesto transpirable con diseño urbano y tecnología moisture-wicking.",
+    "price": 54.99,
+    "category": "basketball",
+    "stock": 65,
+    "featured": false,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  },
+  {
+    "id": "12",
+    "name": "Traje de Baño Performance",
+    "description": "Traje de baño de competición con tecnología de reducción de resistencia al agua.",
+    "price": 69.99,
+    "category": "swimming",
+    "stock": 50,
+    "featured": false,
+    "images": ["/placeholder.svg?height=800&width=600"]
+  }
+]
