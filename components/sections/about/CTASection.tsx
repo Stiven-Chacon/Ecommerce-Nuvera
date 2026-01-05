@@ -20,7 +20,7 @@ export default function CTASection({
   title = "ÚNETE A LA FAMILIA NUVERA",
   description = "Descubre por qué miles de atletas confían en nosotros para alcanzar sus metas",
   buttonText = "Explorar Productos",
-  buttonHref = "/productos",
+  buttonHref = "/products",
   variant = 'default'
 }: CTASectionProps) {
   const sectionRef = useRef<HTMLElement>(null);

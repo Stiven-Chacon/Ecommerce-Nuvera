@@ -165,7 +165,7 @@ export function HeroSection() {
           
            <div className="hero-buttons flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild className="h-14 px-8 text-base font-bold bg-accent hover:bg-accent/90">
-                  <Link href="/productos">Explorar Colección</Link>
+                  <Link href="/products">Explorar Colección</Link>
                 </Button>
                 <Button
                   size="lg"
@@ -173,7 +173,7 @@ export function HeroSection() {
                   asChild
                   className="h-14 px-8 text-base font-bold border-2 border-white text-white hover:bg-white hover:text-black bg-transparent"
                 >
-                  <Link href="/productos?categoria=nuevo">Ver Novedades</Link>
+                  <Link href="/products?categoria=nuevo">Ver Novedades</Link>
                 </Button>
             </div>
         </div>

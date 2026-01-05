@@ -20,7 +20,7 @@ export default function CTASection({
   title = "¿NO ENCUENTRAS LO QUE BUSCAS?",
   description = "Explora todos nuestros productos o contáctanos para asesoría personalizada",
   primaryButtonText = "Ver Todos los Productos",
-  primaryButtonHref = "/productos",
+  primaryButtonHref = "/products",
   darkMode = true
 }: CTASectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
