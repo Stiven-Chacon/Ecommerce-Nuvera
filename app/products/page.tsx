@@ -6,10 +6,9 @@ import { ProductCard } from "@/components/sections/products/product-card"
 import { getProductsAction } from "@/lib/actions/products"
 import { Product } from "@/lib/products/products-types"
 import { useSearchParams } from "next/navigation"
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 
-
-export default function ProductsPage() {
+function ProductsContent() {
   const [products, setProducts] = useState<Product[]>([])
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([])
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
@@ -52,53 +51,69 @@ export default function ProductsPage() {
   ]
 
   return (
+    <>
+      <div className="mb-12">
+        <h1 className="text-4xl md:text-5xl font-black mb-4">TODOS LOS PRODUCTOS</h1>
+        <p className="text-muted-foreground text-lg">Explora nuestra colección completa de equipamiento deportivo</p>
+      </div>
+
+      {/* Category Filter */}
+      <div className="mb-8 flex flex-wrap gap-3">
+        {categories.map((category) => (
+          <button
+            key={category.id}
+            onClick={() => handleCategoryChange(category.id)}
+            className={`px-6 py-2 rounded-full font-bold text-sm transition-all ${
+              selectedCategory === category.id ? "bg-accent text-white" : "bg-muted hover:bg-muted/80 text-foreground"
+            }`}
+          >
+            {category.name}
+          </button>
+        ))}
+      </div>
+
+      {/* Products Count */}
+      <div className="mb-6">
+        <p className="text-sm text-muted-foreground">
+          {filteredProducts.length} {filteredProducts.length === 1 ? "producto" : "productos"}
+        </p>
+      </div>
+
+      {filteredProducts && filteredProducts.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-16 bg-muted rounded-lg">
+          <p className="text-muted-foreground text-lg">
+            {selectedCategory === "all"
+              ? "No hay productos disponibles en este momento"
+              : "No hay productos en esta categoría"}
+          </p>
+        </div>
+      )}
+    </>
+  )
+}
+
+export default function ProductsPage() {
+  return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
       <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-black mb-4">TODOS LOS PRODUCTOS</h1>
-          <p className="text-muted-foreground text-lg">Explora nuestra colección completa de equipamiento deportivo</p>
-        </div>
-
-        {/* Category Filter */}
-        <div className="mb-8 flex flex-wrap gap-3">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => handleCategoryChange(category.id)}
-              className={`px-6 py-2 rounded-full font-bold text-sm transition-all ${
-                selectedCategory === category.id ? "bg-accent text-white" : "bg-muted hover:bg-muted/80 text-foreground"
-              }`}
-            >
-              {category.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Products Count */}
-        <div className="mb-6">
-          <p className="text-sm text-muted-foreground">
-            {filteredProducts.length} {filteredProducts.length === 1 ? "producto" : "productos"}
-          </p>
-        </div>
-
-        {filteredProducts && filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+        <Suspense fallback={
+          <div className="flex items-center justify-center py-20">
+            <div className="text-center">
+              <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite] mb-4" />
+              <p className="text-muted-foreground">Cargando productos...</p>
+            </div>
           </div>
-        ) : (
-          <div className="text-center py-16 bg-muted rounded-lg">
-            <p className="text-muted-foreground text-lg">
-              {selectedCategory === "all"
-                ? "No hay productos disponibles en este momento"
-                : "No hay productos en esta categoría"}
-            </p>
-          </div>
-        )}
-
+        }>
+          <ProductsContent />
+        </Suspense>
       </main>
 
       <Footer />
