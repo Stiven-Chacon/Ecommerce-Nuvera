@@ -1,122 +1,1002 @@
 [
   {
     "id": "1",
-    "name": "Zapatillas Running Pro",
-    "description": "Zapatillas de running de alto rendimiento con amortiguación avanzada y tecnología de retorno de energía. Ideales para corredores serios.",
+    "name": "Zapatillas Running CloudMax",
+    "description": "Zapatillas de running con tecnología de amortiguación CloudMax y suela de alta tracción. Perfectas para largas distancias y entrenamientos diarios.",
     "price": 149.99,
     "category": "running",
     "stock": 45,
     "featured": true,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=600&fit=crop"]
   },
   {
     "id": "2",
     "name": "Camiseta Training Elite",
-    "description": "Camiseta técnica con tecnología de secado rápido y ventilación estratégica para entrenamientos intensos.",
+    "description": "Camiseta técnica con tecnología de secado rápido y ventilación estratégica. Material antibacteriano y costuras planas para máxima comodidad.",
     "price": 39.99,
     "category": "training",
     "stock": 120,
     "featured": true,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=600&fit=crop"]
   },
   {
     "id": "3",
-    "name": "Pantalón Deportivo Flex",
-    "description": "Pantalón con tecnología elástica de 4 direcciones para máxima libertad de movimiento en cualquier actividad.",
-    "price": 79.99,
-    "category": "training",
-    "stock": 80,
-    "featured": true,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "name": "Mochila Outdoor Adventure 40L",
+    "description": "Mochila resistente al agua con capacidad de 40L, múltiples compartimentos y sistema de ventilación en la espalda. Ideal para senderismo y camping.",
+    "price": 89.99,
+    "category": "outdoor",
+    "stock": 32,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1622260614153-03223fb72052?w=800&h=600&fit=crop"]
   },
   {
     "id": "4",
-    "name": "Chaqueta Outdoor Adventure",
-    "description": "Chaqueta impermeable y cortavientos perfecta para aventuras al aire libre con bolsillos funcionales.",
-    "price": 129.99,
-    "category": "outdoor",
-    "stock": 35,
+    "name": "Colchoneta Yoga Premium",
+    "description": "Colchoneta de yoga ecológica de 6mm de grosor con superficie antideslizante. Incluye correa de transporte y bolsa de almacenamiento.",
+    "price": 54.99,
+    "category": "yoga",
+    "stock": 78,
     "featured": true,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&h=600&fit=crop"]
   },
   {
     "id": "5",
-    "name": "Mallas Yoga Premium",
-    "description": "Mallas de compresión media con cintura alta y tejido transpirable para yoga y pilates.",
-    "price": 59.99,
-    "category": "yoga",
-    "stock": 95,
-    "featured": true,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "name": "Zapatillas Basketball ProHoop",
+    "description": "Zapatillas de baloncesto con soporte de tobillo mejorado y suela de tracción multidireccional. Diseño de alto rendimiento para la cancha.",
+    "price": 129.99,
+    "category": "basketball",
+    "stock": 28,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=600&fit=crop"]
   },
   {
     "id": "6",
-    "name": "Zapatillas Basketball Street",
-    "description": "Zapatillas de baloncesto con suela antideslizante y soporte de tobillo para juego urbano.",
-    "price": 139.99,
-    "category": "basketball",
-    "stock": 55,
-    "featured": true,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "name": "Gafas Natación AquaVision",
+    "description": "Gafas de natación con lentes anti-empañamiento y protección UV. Sellado hermético y ajuste cómodo para entrenamientos prolongados.",
+    "price": 24.99,
+    "category": "swimming",
+    "stock": 95,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1530884698386-d42ad3199b1f?w=800&h=600&fit=crop"]
   },
   {
     "id": "7",
-    "name": "Shorts Running Light",
-    "description": "Shorts ligeros con forro interior y bolsillo con cierre para entrenamientos de running.",
-    "price": 34.99,
+    "name": "Shorts Running Ultralight",
+    "description": "Shorts de running ultraligeros con bolsillos internos y tecnología de control de humedad. Diseño ergonómico para máxima libertad de movimiento.",
+    "price": 44.99,
     "category": "running",
-    "stock": 110,
+    "stock": 67,
     "featured": false,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=600&fit=crop"]
   },
   {
     "id": "8",
-    "name": "Top Deportivo Impact",
-    "description": "Top deportivo de alto impacto con soporte reforzado y diseño ergonómico.",
-    "price": 44.99,
+    "name": "Pesas Ajustables 20kg Set",
+    "description": "Set de pesas ajustables de 5 a 20kg por mancuerna. Sistema de cambio rápido y base compacta de almacenamiento incluida.",
+    "price": 199.99,
     "category": "training",
-    "stock": 85,
-    "featured": false,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "stock": 18,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
   },
   {
     "id": "9",
-    "name": "Mochila Outdoor 30L",
-    "description": "Mochila técnica de 30 litros con sistema de hidratación y compartimentos organizadores.",
-    "price": 89.99,
+    "name": "Chaqueta Outdoor Impermeable",
+    "description": "Chaqueta impermeable y cortavientos con capucha ajustable. Costuras selladas y bolsillos con cremallera para máxima protección.",
+    "price": 119.99,
     "category": "outdoor",
-    "stock": 40,
-    "featured": false,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "stock": 41,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=600&fit=crop"]
   },
   {
     "id": "10",
-    "name": "Mat Yoga Eco",
-    "description": "Esterilla de yoga ecológica antideslizante con grosor de 6mm para mayor comodidad.",
-    "price": 49.99,
+    "name": "Bloque Yoga Cork Natural",
+    "description": "Bloque de yoga de corcho natural 100% sostenible. Superficie antideslizante y bordes redondeados para mayor comodidad en tus posturas.",
+    "price": 18.99,
     "category": "yoga",
-    "stock": 70,
+    "stock": 104,
     "featured": false,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"]
   },
   {
     "id": "11",
-    "name": "Jersey Basketball Pro",
-    "description": "Jersey de baloncesto transpirable con diseño urbano y tecnología moisture-wicking.",
-    "price": 54.99,
+    "name": "Balón Basketball Official",
+    "description": "Balón de baloncesto oficial tamaño 7 con agarre superior. Superficie composite de alta durabilidad para uso interior y exterior.",
+    "price": 34.99,
     "category": "basketball",
-    "stock": 65,
+    "stock": 56,
     "featured": false,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&h=600&fit=crop"]
   },
   {
     "id": "12",
-    "name": "Traje de Baño Performance",
-    "description": "Traje de baño de competición con tecnología de reducción de resistencia al agua.",
+    "name": "Traje de Baño Competición",
+    "description": "Traje de baño de competición con tecnología de compresión y reducción de resistencia. Tejido resistente al cloro y de secado rápido.",
+    "price": 79.99,
+    "category": "swimming",
+    "stock": 43,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "13",
+    "name": "Reloj GPS Running Smart",
+    "description": "Reloj deportivo con GPS integrado, monitor de frecuencia cardíaca y tracking de múltiples deportes. Batería de hasta 7 días.",
+    "price": 249.99,
+    "category": "running",
+    "stock": 22,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "14",
+    "name": "Guantes Training Crossfit",
+    "description": "Guantes de entrenamiento con protección de muñeca y palma reforzada. Agarre antideslizante ideal para levantamiento de pesas y crossfit.",
+    "price": 29.99,
+    "category": "training",
+    "stock": 88,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1517438984742-1262db08379e?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "15",
+    "name": "Bastones Trekking Telescópicos",
+    "description": "Par de bastones de trekking telescópicos de aluminio ligero. Ajustables de 65 a 135cm con empuñadura ergonómica de corcho.",
+    "price": 49.99,
+    "category": "outdoor",
+    "stock": 35,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1606850780554-b55ef9fe3b57?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "16",
+    "name": "Set Bandas Resistencia Yoga",
+    "description": "Set de 3 bandas de resistencia de diferentes niveles para yoga y pilates. Incluye bolsa de transporte y guía de ejercicios.",
+    "price": 22.99,
+    "category": "yoga",
+    "stock": 112,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "17",
+    "name": "Calcetines Basketball Performance",
+    "description": "Calcetines de baloncesto con soporte de arco y acolchado en zonas de impacto. Tecnología de control de humedad y compresión graduada.",
+    "price": 16.99,
+    "category": "basketball",
+    "stock": 145,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "18",
+    "name": "Gorro Natación Silicona",
+    "description": "Gorro de natación de silicona premium con diseño ergonómico. Reduce la resistencia al agua y protege el cabello del cloro.",
+    "price": 12.99,
+    "category": "swimming",
+    "stock": 128,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "19",
+    "name": "Mallas Running Térmicas",
+    "description": "Mallas de running térmicas con tejido térmico y reflectantes. Perfectas para entrenamientos en condiciones de frío con bolsillo para llaves.",
+    "price": 59.99,
+    "category": "running",
+    "stock": 52,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "20",
+    "name": "Rodillo de Espuma Fitness",
+    "description": "Rodillo de espuma de alta densidad para masaje muscular y recuperación. Textura 3D para liberación miofascial profunda, 45cm de longitud.",
+    "price": 32.99,
+    "category": "training",
+    "stock": 74,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "21",
+    "name": "Zapatillas Trail Running Extreme",
+    "description": "Zapatillas especializadas para trail running con suela Vibram y protección contra rocas. Impermeables y con drenaje rápido.",
+    "price": 169.99,
+    "category": "running",
+    "stock": 33,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "22",
+    "name": "Camiseta Sin Mangas Training",
+    "description": "Camiseta sin mangas con tecnología de malla transpirable. Perfecta para entrenamientos de alta intensidad y días calurosos.",
+    "price": 34.99,
+    "category": "training",
+    "stock": 92,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1614251055880-57e04084b8f4?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "23",
+    "name": "Carpa Outdoor 4 Personas",
+    "description": "Carpa impermeable para 4 personas con doble techo y ventilación cruzada. Fácil montaje y estructura resistente al viento.",
+    "price": 289.99,
+    "category": "outdoor",
+    "stock": 14,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "24",
+    "name": "Correa Yoga Stretch Pro",
+    "description": "Correa de yoga de algodón orgánico de 2.4m con hebilla D ajustable. Ideal para mejorar flexibilidad y profundizar posturas.",
+    "price": 14.99,
+    "category": "yoga",
+    "stock": 136,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "25",
+    "name": "Rodilleras Basketball Pro",
+    "description": "Rodilleras de compresión con almohadillas de gel para protección de impactos. Diseño transpirable y antideslizante.",
+    "price": 39.99,
+    "category": "basketball",
+    "stock": 68,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "26",
+    "name": "Aletas Natación Entrenamiento",
+    "description": "Aletas cortas de entrenamiento para mejorar técnica y fuerza de piernas. Material flexible y cómodo para uso prolongado.",
+    "price": 44.99,
+    "category": "swimming",
+    "stock": 51,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "27",
+    "name": "Chaleco Reflectante Running",
+    "description": "Chaleco ultraligero con bandas reflectantes 360°. Ajustable y transpirable para correr de noche con máxima visibilidad.",
+    "price": 27.99,
+    "category": "running",
+    "stock": 84,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "28",
+    "name": "Banco Pesas Ajustable",
+    "description": "Banco de pesas multiposición con 7 ajustes de respaldo. Soporta hasta 300kg y incluye banda de resistencia integrada.",
+    "price": 179.99,
+    "category": "training",
+    "stock": 19,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "29",
+    "name": "Sleeping Bag Outdoor -10°C",
+    "description": "Saco de dormir tipo momia con relleno sintético para temperaturas hasta -10°C. Compacto y ligero con capucha térmica ajustable.",
+    "price": 134.99,
+    "category": "outdoor",
+    "stock": 27,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "30",
+    "name": "Rueda Yoga Dharma",
+    "description": "Rueda de yoga de madera de bambú con superficie acolchada. Perfecta para backbends, estiramientos profundos y equilibrio.",
+    "price": 64.99,
+    "category": "yoga",
+    "stock": 45,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "31",
+    "name": "Camiseta Basketball Reversible",
+    "description": "Camiseta de baloncesto reversible de doble cara. Material mesh transpirable y corte holgado para máxima movilidad.",
+    "price": 42.99,
+    "category": "basketball",
+    "stock": 76,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "32",
+    "name": "Tabla Natación Kickboard",
+    "description": "Tabla de natación ergonómica para entrenamiento de piernas. Material EVA flotante y agarre antideslizante en los laterales.",
+    "price": 19.99,
+    "category": "swimming",
+    "stock": 103,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1600965962102-9d260a71890d?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "33",
+    "name": "Zapatillas Running Neutral Flex",
+    "description": "Zapatillas de running con pisada neutra y drop de 8mm. Ideales para corredores que buscan un balance entre amortiguación y respuesta.",
+    "price": 139.99,
+    "category": "running",
+    "stock": 58,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "34",
+    "name": "Kettlebell Competición 16kg",
+    "description": "Kettlebell de hierro fundido de 16kg con acabado liso. Mango ergonómico y base plana para máxima estabilidad.",
+    "price": 89.99,
+    "category": "training",
+    "stock": 36,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "35",
+    "name": "Linterna Frontal LED Outdoor",
+    "description": "Linterna frontal LED de 500 lúmenes con 5 modos de iluminación. Resistente al agua IPX6 y batería recargable USB.",
+    "price": 38.99,
+    "category": "outdoor",
+    "stock": 62,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1496080174650-637e3f22fa03?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "36",
+    "name": "Cojín Meditación Zafu",
+    "description": "Cojín de meditación tradicional relleno de espelta orgánica. Funda removible de algodón y altura de 15cm para postura correcta.",
+    "price": 49.99,
+    "category": "yoga",
+    "stock": 71,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "37",
+    "name": "Shorts Basketball Performance",
+    "description": "Shorts de baloncesto con tecnología Dri-FIT y bolsillos laterales con cremallera. Cinturilla elástica con cordón ajustable.",
+    "price": 48.99,
+    "category": "basketball",
+    "stock": 89,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "38",
+    "name": "Snorkel Frontal Natación",
+    "description": "Snorkel frontal para natación con válvula de purga y boquilla de silicona. Mejora la técnica manteniendo la alineación corporal.",
+    "price": 36.99,
+    "category": "swimming",
+    "stock": 47,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "39",
+    "name": "Medias Compresión Running",
+    "description": "Medias de compresión graduada para running que mejoran la circulación y reducen la fatiga muscular. Material transpirable.",
+    "price": 42.99,
+    "category": "running",
+    "stock": 94,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "40",
+    "name": "Barra Dominadas Puerta",
+    "description": "Barra de dominadas ajustable para puertas de 60-100cm. Soporta hasta 150kg con agarres acolchados y múltiples posiciones.",
+    "price": 54.99,
+    "category": "training",
+    "stock": 41,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "41",
+    "name": "Navaja Multiusos Outdoor",
+    "description": "Navaja suiza con 15 funciones incluyendo cuchillo, tijeras, destornillador y abrelatas. Acero inoxidable de alta calidad.",
+    "price": 45.99,
+    "category": "outdoor",
+    "stock": 88,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "42",
+    "name": "Manta Yoga Mexicana",
+    "description": "Manta tradicional de yoga 100% algodón tejido. Perfecta para Savasana, meditación o como cobertor. Diseño artesanal colorido.",
+    "price": 34.99,
+    "category": "yoga",
+    "stock": 67,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "43",
+    "name": "Balón Medicinal 8kg",
+    "description": "Balón medicinal de goma texturizada de 8kg. Ideal para ejercicios de core, lanzamientos y entrenamiento funcional.",
+    "price": 69.99,
+    "category": "training",
+    "stock": 32,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "44",
+    "name": "Zapatillas Basketball High Top",
+    "description": "Zapatillas de baloncesto de caña alta con tecnología Zoom Air. Soporte premium de tobillo y tracción herringbone.",
+    "price": 159.99,
+    "category": "basketball",
+    "stock": 24,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "45",
+    "name": "Pullbuoy Natación Foam",
+    "description": "Pullbuoy ergonómico de espuma EVA para entrenamiento de brazos. Diseño anatómico que se ajusta cómodamente entre las piernas.",
+    "price": 16.99,
+    "category": "swimming",
+    "stock": 115,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "46",
+    "name": "Cinturón Running Hidratación",
+    "description": "Cinturón de running con 2 botellas de 250ml y bolsillos para llaves y gel. Ajuste sin rebotes y material transpirable.",
+    "price": 37.99,
+    "category": "running",
+    "stock": 79,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "47",
+    "name": "Colchoneta Camping Autoinflable",
+    "description": "Colchoneta autoinflable de 5cm de grosor con válvula de doble sentido. Compacta y ligera para camping y trekking.",
+    "price": 79.99,
+    "category": "outdoor",
+    "stock": 38,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "48",
+    "name": "Pelota Pilates 65cm",
+    "description": "Pelota de pilates anti-burst de 65cm con bomba incluida. Superficie antideslizante y soporta hasta 300kg.",
+    "price": 28.99,
+    "category": "yoga",
+    "stock": 96,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "49",
+    "name": "Cuerda Saltar Speed Pro",
+    "description": "Cuerda de saltar profesional con rodamientos de bolas y cable de acero recubierto. Mangos ergonómicos con peso ajustable.",
+    "price": 24.99,
+    "category": "training",
+    "stock": 108,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "50",
+    "name": "Muñequeras Basketball Sweatband",
+    "description": "Muñequeras absorbentes de algodón-poliéster. Pack de 2 unidades con logo bordado. Disponibles en múltiples colores.",
+    "price": 11.99,
+    "category": "basketball",
+    "stock": 156,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "51",
+    "name": "Toalla Microfibra Natación",
+    "description": "Toalla de microfibra ultra absorbente y de secado rápido. Compacta, ligera y antimicrobiana. Tamaño 80x160cm.",
+    "price": 29.99,
+    "category": "swimming",
+    "stock": 82,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "52",
+    "name": "Plantillas Running Gel",
+    "description": "Plantillas deportivas con gel de absorción de impactos. Soporte de arco y diseño anatómico para reducir la fatiga.",
+    "price": 32.99,
+    "category": "running",
+    "stock": 124,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "53",
+    "name": "Hornillo Camping Gas",
+    "description": "Hornillo portátil de gas con encendido piezoeléctrico. Potencia de 3500W y control de llama ajustable. Incluye estuche.",
+    "price": 54.99,
+    "category": "outdoor",
+    "stock": 43,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "54",
+    "name": "Bolster Yoga Cilíndrico",
+    "description": "Cojín cilíndrico de yoga relleno de algodón orgánico. Soporte firme para posturas restaurativas y Yin Yoga. 65x23cm.",
+    "price": 74.99,
+    "category": "yoga",
+    "stock": 39,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "55",
+    "name": "Discos Peso Olímpicos 20kg",
+    "description": "Par de discos olímpicos de hierro fundido de 20kg cada uno. Diámetro 50mm con agarre triple para fácil manejo.",
+    "price": 149.99,
+    "category": "training",
+    "stock": 16,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "56",
+    "name": "Red Portería Basketball Mini",
+    "description": "Aro de baloncesto mini con red de nylon profesional. Malla todo clima resistente a UV. Diámetro estándar 45cm.",
+    "price": 18.99,
+    "category": "basketball",
+    "stock": 97,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "57",
+    "name": "Paletas Natación Técnica",
+    "description": "Paletas de mano para natación diseñadas para mejorar técnica y fuerza. Orificios de flujo ajustables y correas de silicona.",
+    "price": 27.99,
+    "category": "swimming",
+    "stock": 73,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "58",
+    "name": "Cortavientos Running Packable",
+    "description": "Cortavientos ultraligero plegable en su propio bolsillo. Tratamiento DWR repelente al agua y costuras reflectantes.",
+    "price": 64.99,
+    "category": "running",
+    "stock": 56,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "59",
+    "name": "Machete Outdoor Supervivencia",
+    "description": "Machete de acero al carbono de 45cm con funda de nylon. Mango antideslizante y filo de sierra en el lomo.",
+    "price": 49.99,
+    "category": "outdoor",
+    "stock": 29,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "60",
+    "name": "Aceite Esencial Yoga Lavanda",
+    "description": "Aceite esencial puro de lavanda 100% natural para aromaterapia. Perfecto para relajación y meditación. Frasco de 30ml.",
+    "price": 19.99,
+    "category": "yoga",
+    "stock": 142,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "61",
+    "name": "TRX Sistema Suspensión",
+    "description": "Sistema de entrenamiento en suspensión TRX con anclaje para puerta. Incluye guía de ejercicios y bolsa de transporte.",
+    "price": 189.99,
+    "category": "training",
+    "stock": 31,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "62",
+    "name": "Mallas Basketball Compresión",
+    "description": "Mallas de compresión para usar bajo shorts de baloncesto. Tecnología de soporte muscular y control de temperatura.",
+    "price": 44.99,
+    "category": "basketball",
+    "stock": 83,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "63",
+    "name": "Boya Natación Aguas Abiertas",
+    "description": "Boya de seguridad inflable de alta visibilidad para natación en aguas abiertas. Compartimento seco de 20L integrado.",
+    "price": 39.99,
+    "category": "swimming",
+    "stock": 48,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "64",
+    "name": "Gorra Running Técnica",
+    "description": "Gorra de running con panel de malla transpirable y visera curvada. Banda interior absorbente y ajuste con velcro.",
+    "price": 24.99,
+    "category": "running",
+    "stock": 114,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1588117305388-c2631a279f82?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "65",
+    "name": "Botiquín Primeros Auxilios Outdoor",
+    "description": "Botiquín completo de primeros auxilios con 120 piezas. Estuche impermeable compacto ideal para camping y senderismo.",
+    "price": 42.99,
+    "category": "outdoor",
+    "stock": 64,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1603911228606-8e37ce2e7b7f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "66",
+    "name": "Tapete Acupresión Yoga",
+    "description": "Tapete de acupresión con 6000 puntos de presión para aliviar tensión muscular. Incluye almohada de cuello y bolsa.",
+    "price": 54.99,
+    "category": "yoga",
+    "stock": 57,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "67",
+    "name": "Step Aeróbico Ajustable",
+    "description": "Step para aeróbicos con 3 niveles de altura ajustable (10-15-20cm). Superficie antideslizante y patas de goma estables.",
+    "price": 74.99,
+    "category": "training",
+    "stock": 42,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "68",
+    "name": "Silbato Árbitro Basketball",
+    "description": "Silbato profesional de árbitro sin bola con sonido penetrante. Material antimicrobiano y cordón de seguridad incluido.",
+    "price": 14.99,
+    "category": "basketball",
+    "stock": 134,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "69",
+    "name": "Neopreno Natación 3mm",
+    "description": "Traje de neopreno para natación en aguas frías de 3mm. Costuras selladas y cremallera dorsal para fácil colocación.",
+    "price": 189.99,
+    "category": "swimming",
+    "stock": 22,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "70",
+    "name": "Brazalete Running Smartphone",
+    "description": "Brazalete deportivo para smartphone de hasta 6.5 pulgadas. Material elástico transpirable con ventana táctil sensible.",
+    "price": 17.99,
+    "category": "running",
+    "stock": 148,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "71",
+    "name": "Filtro Agua Portátil Outdoor",
+    "description": "Filtro de agua portátil con tecnología de 0.01 micrones. Elimina 99.9% de bacterias y parásitos. Capacidad de 2000L.",
+    "price": 44.99,
+    "category": "outdoor",
+    "stock": 53,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1603911228606-8e37ce2e7b7f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "72",
+    "name": "Incienso Natural Yoga Sándalo",
+    "description": "Caja de 100 varillas de incienso natural de sándalo. Aroma relajante para crear ambiente en práctica de yoga y meditación.",
+    "price": 16.99,
+    "category": "yoga",
+    "stock": 126,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "73",
+    "name": "Esterilla Gimnasio 20mm",
+    "description": "Esterilla de ejercicio extra gruesa de 20mm para protección superior. Material NBR denso y antideslizante. 180x60cm.",
+    "price": 49.99,
+    "category": "training",
+    "stock": 68,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "74",
+    "name": "Bomba Inflador Basketball",
+    "description": "Bomba de aire manual con manómetro integrado y adaptadores universales. Perfecta para balones de basketball y fútbol.",
+    "price": 19.99,
+    "category": "basketball",
+    "stock": 102,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "75",
+    "name": "Cronómetro Natación Pro",
+    "description": "Cronómetro digital profesional con memoria de 100 vueltas. Resistente al agua y función de cuenta regresiva.",
+    "price": 34.99,
+    "category": "swimming",
+    "stock": 76,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "76",
+    "name": "Pantalón Running Impermeable",
+    "description": "Pantalón de running impermeable y cortavientos con cremalleras en tobillos. Cintura elástica con cordón ajustable.",
+    "price": 79.99,
+    "category": "running",
+    "stock": 49,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "77",
+    "name": "Hamaca Camping Doble",
+    "description": "Hamaca de camping para 2 personas con mosquitero integrado. Capacidad 200kg, incluye cuerdas y estuche de transporte.",
+    "price": 69.99,
+    "category": "outdoor",
+    "stock": 36,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "78",
+    "name": "Mancuernas Neopreno 5kg Par",
+    "description": "Par de mancuernas hexagonales recubiertas de neopreno de 5kg cada una. Base plana antirrodante y agarre confortable.",
+    "price": 44.99,
+    "category": "training",
+    "stock": 87,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "79",
+    "name": "Libro Yoga Anatomía",
+    "description": "Guía ilustrada de anatomía del yoga con 50 posturas analizadas. Incluye instrucciones detalladas y beneficios de cada asana.",
+    "price": 34.99,
+    "category": "yoga",
+    "stock": 61,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "80",
+    "name": "Protector Bucal Basketball",
+    "description": "Protector bucal deportivo moldeado térmicamente para ajuste personalizado. Incluye estuche ventilado de higiene.",
+    "price": 22.99,
+    "category": "basketball",
+    "stock": 118,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "81",
+    "name": "Clip Nasal Natación Silicona",
+    "description": "Clip nasal ergonómico de silicona suave para natación sincronizada y entrenamientos. Pack de 3 unidades en estuche.",
+    "price": 9.99,
+    "category": "swimming",
+    "stock": 167,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "82",
+    "name": "Auriculares Running Bluetooth",
+    "description": "Auriculares deportivos inalámbricos resistentes al sudor IPX7. Batería de 8 horas y gancho de oreja estable.",
+    "price": 89.99,
+    "category": "running",
+    "stock": 52,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "83",
+    "name": "Brújula Outdoor Profesional",
+    "description": "Brújula de orientación profesional con espejo de señales y clinómetro. Base con regla y cordón de seguridad.",
+    "price": 32.99,
+    "category": "outdoor",
+    "stock": 71,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "84",
+    "name": "Calcetines Yoga Antideslizantes",
+    "description": "Calcetines de yoga con puntos de agarre de silicona. Dedos separados para mejor equilibrio y estabilidad. Pack de 2 pares.",
+    "price": 19.99,
+    "category": "yoga",
+    "stock": 139,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "85",
+    "name": "Barra Olímpica 20kg",
+    "description": "Barra olímpica de 220cm y 20kg con rodamientos de agujas. Acabado cromado y marcas de agarre estándar IWF.",
+    "price": 299.99,
+    "category": "training",
+    "stock": 12,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "86",
+    "name": "Codo Protector Basketball",
+    "description": "Coderas de compresión con almohadilla de gel para protección de impactos. Material transpirable y elástico. Par.",
+    "price": 34.99,
+    "category": "basketball",
+    "stock": 91,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "87",
+    "name": "Tapones Oídos Natación Moldeable",
+    "description": "Tapones de oído de silicona moldeable para natación. Impermeables y cómodos para uso prolongado. Pack de 6 pares.",
+    "price": 14.99,
+    "category": "swimming",
+    "stock": 143,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1530884698386-d42ad3199b1f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "88",
+    "name": "Mochila Hidratación Running 2L",
+    "description": "Mochila de hidratación con reservorio de 2L y válvula anti-fugas. Ultra ligera con múltiples bolsillos para geles.",
+    "price": 64.99,
+    "category": "running",
+    "stock": 44,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1622260614153-03223fb72052?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "89",
+    "name": "GPS Outdoor Portátil",
+    "description": "GPS de mano para senderismo con mapas precargados y brújula electrónica. Pantalla de 3 pulgadas y batería de 16 horas.",
+    "price": 249.99,
+    "category": "outdoor",
+    "stock": 18,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "90",
+    "name": "Cuenco Tibetano Meditación",
+    "description": "Cuenco tibetano artesanal de 12cm con mazo de madera. Sonido armónico para meditación y sanación sonora.",
+    "price": 54.99,
+    "category": "yoga",
+    "stock": 47,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "91",
+    "name": "Ab Wheel Rodillo Abdominal",
+    "description": "Rueda abdominal con doble rodillo para estabilidad. Mangos ergonómicos de espuma y alfombrilla de rodillas incluida.",
+    "price": 29.99,
+    "category": "training",
+    "stock": 95,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "92",
+    "name": "Bolsa Basketball Deporte",
+    "description": "Bolsa deportiva con compartimento específico para balón y ventilación para calzado. Material resistente con correas acolchadas.",
+    "price": 49.99,
+    "category": "basketball",
+    "stock": 63,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "93",
+    "name": "Temporizador Pace Natación",
+    "description": "Temporizador digital para entrenamientos de natación con intervalos programables. Pantalla LED grande y alarma sonora.",
+    "price": 54.99,
+    "category": "swimming",
+    "stock": 38,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "94",
+    "name": "Chaleco Lastrado Running 10kg",
+    "description": "Chaleco de entrenamiento con peso ajustable de 4 a 10kg. Distribución uniforme del peso y material transpirable.",
+    "price": 94.99,
+    "category": "running",
+    "stock": 27,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "95",
+    "name": "Cantimplora Acero Outdoor 1L",
+    "description": "Cantimplora de acero inoxidable de 1L con aislamiento al vacío. Mantiene líquidos fríos 24h o calientes 12h.",
+    "price": 39.99,
+    "category": "outdoor",
+    "stock": 81,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "96",
+    "name": "Collar Mala Meditación 108",
+    "description": "Collar mala tradicional de 108 cuentas de madera de sándalo. Borla de seda y cuenta gurú para práctica de mantras.",
+    "price": 29.99,
+    "category": "yoga",
+    "stock": 73,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "97",
+    "name": "Parallettes Calistenia",
+    "description": "Par de paralelas bajas para calistenia y gimnasia. Altura 30cm, base antideslizante y soporta hasta 180kg.",
+    "price": 79.99,
+    "category": "training",
+    "stock": 34,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "98",
+    "name": "Conos Entrenamiento Basketball",
+    "description": "Set de 20 conos de agilidad de 18cm de altura en 4 colores. Apilables y con orificios para postes de coordinación.",
+    "price": 24.99,
+    "category": "basketball",
+    "stock": 109,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "99",
+    "name": "Mochila Natación Impermeable",
+    "description": "Mochila impermeable de 40L con compartimento ventilado para traje mojado. Sistema de drenaje y bolsillo frontal.",
     "price": 69.99,
     "category": "swimming",
-    "stock": 50,
+    "stock": 56,
     "featured": false,
-    "images": ["/placeholder.svg?height=800&width=600"]
+    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "100",
+    "name": "Foam Roller Vibratorio",
+    "description": "Rodillo de espuma vibratorio con 4 niveles de intensidad. Batería recargable USB y superficie texturizada para masaje profundo.",
+    "price": 129.99,
+    "category": "training",
+    "stock": 23,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
   }
 ]
