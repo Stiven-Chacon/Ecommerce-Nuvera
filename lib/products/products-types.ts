@@ -25,7 +25,7 @@ export interface Order {
   total: number
   status: string
   stripe_payment_intent_id: string | null
-  shipping_address: any
+  //shipping_address: any
   created_at: string
   updated_at: string
 }
