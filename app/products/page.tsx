@@ -2,6 +2,7 @@
 
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/headers"
+import { ProductCard } from "@/components/sections/products/product-card"
 import { getProductsAction } from "@/lib/actions/products"
 import { Product } from "@/lib/products/products-types"
 import { useSearchParams } from "next/navigation"
@@ -81,6 +82,22 @@ export default function ProductsPage() {
             {filteredProducts.length} {filteredProducts.length === 1 ? "producto" : "productos"}
           </p>
         </div>
+
+        {filteredProducts && filteredProducts.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {filteredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16 bg-muted rounded-lg">
+            <p className="text-muted-foreground text-lg">
+              {selectedCategory === "all"
+                ? "No hay productos disponibles en este momento"
+                : "No hay productos en esta categoría"}
+            </p>
+          </div>
+        )}
 
       </main>
 
