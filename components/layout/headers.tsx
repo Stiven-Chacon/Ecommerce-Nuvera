@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ShoppingBag, Search, Menu, X } from "lucide-react"
 import { Button } from "../ui/button"
@@ -28,7 +30,7 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/productos" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors">
               Productos
             </Link>
             <Link href="/collections" className="text-sm font-medium hover:text-primary transition-colors">
@@ -72,7 +74,7 @@ export function Header() {
             <div className="mobile-menu md:hidden py-4 border-t border-border">
               <nav className="flex flex-col gap-4">
                 <Link
-                  href="/productos"
+                  href="/products"
                   className="mobile-menu-item text-base font-medium hover:text-primary transition-colors py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
