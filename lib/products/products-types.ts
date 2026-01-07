@@ -7,8 +7,8 @@ export interface Product {
   category: string
   stock: number
   featured: boolean
-  created_at: string
-  updated_at: string
+  created_at?: string
+  updated_at?: string
 }
 
 export interface CartItem {

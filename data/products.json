@@ -998,5 +998,185 @@
     "stock": 23,
     "featured": true,
     "images": ["https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "101",
+    "name": "Zapatillas Quantum Run Pro",
+    "description": "Última tecnología en running con amortiguación adaptativa y suela de carbono. Diseño futurista con iluminación LED integrada.",
+    "price": 199.99,
+    "category": "new",
+    "stock": 35,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "102",
+    "name": "Smart Band Fitness Pro",
+    "description": "Pulsera inteligente con monitor de frecuencia cardíaca, GPS, y análisis de sueño. Resistente al agua hasta 50m.",
+    "price": 89.99,
+    "category": "new",
+    "stock": 50,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "103",
+    "name": "Mochila Hidratación Ultra",
+    "description": "Mochila ligera con sistema de hidratación de 2L. Diseño ergonómico y compartimentos reflectantes para seguridad nocturna.",
+    "price": 79.99,
+    "category": "new",
+    "stock": 28,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "104",
+    "name": "Guantes Térmicos Touch",
+    "description": "Guantes deportivos con tecnología touchscreen y forros térmicos. Perfectos para entrenar en climas fríos.",
+    "price": 44.99,
+    "category": "new",
+    "stock": 60,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1588117305388-c2631a279f82?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "105",
+    "name": "Camiseta Cooling Tech",
+    "description": "Camiseta con tecnología de enfriamiento activo y protección UV 50+. Tejido de secado ultrarrápido.",
+    "price": 54.99,
+    "category": "new",
+    "stock": 75,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "106",
+    "name": "Auriculares Deportivos BT",
+    "description": "Auriculares Bluetooth con cancelación de ruido y resistencia IPX7. Batería de 12 horas de reproducción continua.",
+    "price": 119.99,
+    "category": "new",
+    "stock": 42,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "107",
+    "name": "Shorts Compresión 2.0",
+    "description": "Shorts de compresión graduada con bolsillos integrados y tejido antibacteriano. Ideal para recuperación post-entreno.",
+    "price": 64.99,
+    "category": "new",
+    "stock": 55,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "108",
+    "name": "Botella Smart Hydration",
+    "description": "Botella inteligente que registra tu hidratación y te recuerda beber agua. Pantalla LED y conexión Bluetooth.",
+    "price": 69.99,
+    "category": "new",
+    "stock": 38,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "109",
+    "name": "Chaleco Reflectante LED",
+    "description": "Chaleco ultraligero con tiras LED recargables y 3 modos de iluminación. Máxima visibilidad nocturna.",
+    "price": 49.99,
+    "category": "new",
+    "stock": 45,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "110",
+    "name": "Rodilleras Estabilizadoras Pro",
+    "description": "Rodilleras con soporte lateral y sistema de compresión ajustable. Material transpirable y anatómico.",
+    "price": 39.99,
+    "category": "new",
+    "stock": 52,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1606889464198-fcb18894cf50?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "111",
+    "name": "Gorra UV Protection",
+    "description": "Gorra deportiva con protección UV y panel de ventilación superior. Ajuste elástico y correa reflectante.",
+    "price": 34.99,
+    "category": "new",
+    "stock": 68,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "112",
+    "name": "Calcetines Compresión Tech",
+    "description": "Calcetines de compresión con zonas de soporte específicas y tecnología anti-ampollas. Pack de 3 pares.",
+    "price": 42.99,
+    "category": "new",
+    "stock": 80,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "113",
+    "name": "Medidor de Lactato Portátil",
+    "description": "Dispositivo portátil para medir niveles de lactato en sangre. Resultados en 15 segundos con app móvil.",
+    "price": 249.99,
+    "category": "new",
+    "stock": 15,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "114",
+    "name": "Toalla Enfriamiento Instant",
+    "description": "Toalla de microfibra con tecnología de enfriamiento instantáneo al contacto con agua. Antibacteriana.",
+    "price": 24.99,
+    "category": "new",
+    "stock": 110,
+    "featured": false,
+    "images": ["https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "115",
+    "name": "Bandas Elásticas Smart Set",
+    "description": "Set de 5 bandas elásticas con sensores de resistencia y app de seguimiento. Incluye anclaje para puerta.",
+    "price": 89.99,
+    "category": "new",
+    "stock": 33,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "116",
+    "name": "Chaqueta Térmica Reflectiva",
+    "description": "Chaqueta cortaviento con aislamiento térmico y paneles 360° reflectivos. Capucha ajustable integrada.",
+    "price": 139.99,
+    "category": "new",
+    "stock": 27,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "117",
+    "name": "Tapete Yoga Inteligente",
+    "description": "Tapete de yoga con sensores de postura y feedback en tiempo real vía app. Superficie antideslizante ecológica.",
+    "price": 179.99,
+    "category": "new",
+    "stock": 22,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"]
+  },
+  {
+    "id": "118",
+    "name": "Kit Recuperación Muscular",
+    "description": "Kit completo con pistola de masaje, bandas de resistencia y rodillo de espuma. Ideal para recuperación post-entrenamiento.",
+    "price": 159.99,
+    "category": "new",
+    "stock": 30,
+    "featured": true,
+    "images": ["https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop"]
   }
 ]

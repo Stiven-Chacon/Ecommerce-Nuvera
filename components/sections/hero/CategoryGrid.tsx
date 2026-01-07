@@ -26,7 +26,7 @@ interface CategoryGridProps {
 const DEFAULT_CATEGORIES: Category[] = [
   {
     id: 'ropa',
-    href: '/products?categoria=ropa',
+    href: '/products?category=ropa',
     image: '/ropa-deportiva-moderna-colgada.jpg',
     alt: 'Ropa Deportiva',
     title: 'ROPA',
@@ -34,7 +34,7 @@ const DEFAULT_CATEGORIES: Category[] = [
   },
   {
     id: 'calzado',
-    href: '/products?categoria=calzado',
+    href: '/products?category=calzado',
     image: '/zapatillas-deportivas-premium.jpg',
     alt: 'Calzado',
     title: 'CALZADO',
@@ -42,7 +42,7 @@ const DEFAULT_CATEGORIES: Category[] = [
   },
   {
     id: 'accesorios',
-    href: '/products?categoria=accesorios',
+    href: '/products?category=accesorios',
     image: '/accesorios-deportivos-modernos.jpg',
     alt: 'Accesorios',
     title: 'ACCESORIOS',
