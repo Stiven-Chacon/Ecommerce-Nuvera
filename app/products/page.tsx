@@ -24,6 +24,7 @@ function ProductsContent() {
         setSelectedCategory(categoryParam)
         setFilteredProducts(data.filter((p) => p.category === categoryParam))
       } else {
+        setSelectedCategory("all")
         setFilteredProducts(data)
       }
     }
