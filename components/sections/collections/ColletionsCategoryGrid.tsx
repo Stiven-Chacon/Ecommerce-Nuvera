@@ -152,7 +152,7 @@ export function CollectionsGrid() {
         {collections.map((collection) => (
           <Link
             key={collection.id}
-            href={`/products?categoria=${collection.id}`}
+            href={`/products?category=${collection.id}`}
             className="collection-card group block"
           >
             <div className="relative h-96 rounded-2xl overflow-hidden bg-black">
