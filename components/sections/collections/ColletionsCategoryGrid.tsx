@@ -4,59 +4,86 @@ import Image from "next/image"
 import Link from "next/link"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import productsData from "@/data/products.json"
 
 gsap.registerPlugin(ScrollTrigger)
 
-const collections = [
-  {
-    id: "running",
+// Configuración visual para cada categoría
+const categoryConfig: Record<string, {
+  name: string
+  description: string
+  image: string
+  color: string
+}> = {
+  running: {
     name: "Running",
     description: "Equipamiento técnico para corredores de alto rendimiento",
     image: "/running-shoes-and-athletic-wear.jpg",
-    products: 120,
     color: "from-orange-500/20 to-red-500/20",
   },
-  {
-    id: "training",
+  training: {
     name: "Training",
     description: "Ropa y accesorios para entrenamientos intensos",
     image: "/gym-training-equipment-and-sportswear.jpg",
-    products: 95,
     color: "from-blue-500/20 to-cyan-500/20",
   },
-  {
-    id: "outdoor",
+  outdoor: {
     name: "Outdoor",
     description: "Aventura y exploración sin límites",
     image: "/outdoor-hiking-gear-and-clothing.jpg",
-    products: 78,
     color: "from-green-500/20 to-emerald-500/20",
   },
-  {
-    id: "yoga",
+  yoga: {
     name: "Yoga & Wellness",
     description: "Comodidad y flexibilidad para tu práctica",
     image: "/yoga-mat-and-wellness-clothing.jpg",
-    products: 65,
     color: "from-purple-500/20 to-pink-500/20",
   },
-  {
-    id: "basketball",
+  basketball: {
     name: "Basketball",
     description: "Estilo urbano y rendimiento en la cancha",
     image: "/basketball-shoes-and-urban-sportswear.jpg",
-    products: 88,
     color: "from-yellow-500/20 to-orange-500/20",
   },
-  {
-    id: "swimming",
+  swimming: {
     name: "Swimming",
     description: "Tecnología acuática de vanguardia",
     image: "/swimming-goggles-and-swimwear.jpg",
-    products: 52,
     color: "from-cyan-500/20 to-blue-500/20",
   },
-]
+}
+
+// Generar colecciones dinámicamente desde los productos
+const getCollectionsFromProducts = () => {
+  const categoryCounts: Record<string, number> = {}
+  
+  // Contar productos por categoría
+  productsData.forEach((product: any) => {
+    const category = product.category
+    categoryCounts[category] = (categoryCounts[category] || 0) + 1
+  })
+  
+  // Crear array de colecciones solo con las categorías que tienen productos
+  return Object.keys(categoryCounts).map((categoryId) => {
+    const config = categoryConfig[categoryId] || {
+      name: categoryId.charAt(0).toUpperCase() + categoryId.slice(1),
+      description: `Productos de ${categoryId}`,
+      image: "/placeholder-image.jpg",
+      color: "from-gray-500/20 to-gray-700/20",
+    }
+    
+    return {
+      id: categoryId,
+      name: config.name,
+      description: config.description,
+      image: config.image,
+      color: config.color,
+      products: categoryCounts[categoryId],
+    }
+  })
+}
+
+const collections = getCollectionsFromProducts()
 
 export function CollectionsGrid() {
   useEffect(() => {
