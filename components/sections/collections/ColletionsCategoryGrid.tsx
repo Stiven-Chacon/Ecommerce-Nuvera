@@ -6,6 +6,7 @@ import Link from "next/link"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import productsData from "@/data/products.json"
+import { Product } from "@/lib/products/products-types"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -59,7 +60,7 @@ const getCollectionsFromProducts = () => {
   const categoryCounts: Record<string, number> = {}
   
   // Contar productos por categoría
-  productsData.forEach((product: any) => {
+  productsData.forEach((product: Product) => {
     const category = product.category
     categoryCounts[category] = (categoryCounts[category] || 0) + 1
   })
