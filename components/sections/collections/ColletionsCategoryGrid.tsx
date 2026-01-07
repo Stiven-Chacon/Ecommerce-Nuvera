@@ -1,4 +1,5 @@
 "use client"
+
 import { useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -63,14 +64,10 @@ const getCollectionsFromProducts = () => {
     categoryCounts[category] = (categoryCounts[category] || 0) + 1
   })
   
-  // Crear array de colecciones solo con las categorías que tienen productos
-  return Object.keys(categoryCounts).map((categoryId) => {
-    const config = categoryConfig[categoryId] || {
-      name: categoryId.charAt(0).toUpperCase() + categoryId.slice(1),
-      description: `Productos de ${categoryId}`,
-      image: "/placeholder-image.jpg",
-      color: "from-gray-500/20 to-gray-700/20",
-    }
+  return Object.keys(categoryCounts)
+    .filter((categoryId) => categoryConfig[categoryId])
+    .map((categoryId) => {
+      const config = categoryConfig[categoryId]
     
     return {
       id: categoryId,
