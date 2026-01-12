@@ -1,18 +1,35 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/headers"
+import { AddToCartButton } from "@/components/ui/add-to-cart-button"
 import { getProductById } from "@/lib/products/products-local"
 import Image from "next/image"
-import { notFound } from "next/navigation"
+import { notFound, useParams } from "next/navigation"
+import { getProductAvailableStock } from "@/lib/actions/cart"
 
-
-export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params
-
+export default function ProductPage() {
+  const params = useParams()
+  const id = params?.id as string
+  
   const product = getProductById(id)
-
+  
   if (!product) {
     notFound()
   }
+
+  const [currentStock, setCurrentStock] = useState(() => getProductAvailableStock(id))
+
+  // Escuchar actualizaciones del carrito
+  useEffect(() => {
+    const handleCartUpdate = () => {
+      setCurrentStock(getProductAvailableStock(id))
+    }
+
+    window.addEventListener("cartUpdated", handleCartUpdate)
+    return () => window.removeEventListener("cartUpdated", handleCartUpdate)
+  }, [id])
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -47,8 +64,8 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground font-medium">Disponibilidad</span>
-                <span className={`font-bold ${product.stock > 0 ? "text-green-600" : "text-red-600"}`}>
-                  {product.stock > 0 ? `${product.stock} en stock` : "Agotado"}
+                <span className={`font-bold transition-colors ${currentStock > 0 ? "text-green-600" : "text-red-600"}`}>
+                  {currentStock > 0 ? `${currentStock} en stock` : "Agotado"}
                 </span>
               </div>
               {product.featured && (
@@ -61,6 +78,11 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               )}
             </div>
 
+            <AddToCartButton 
+              productId={product.id} 
+              size="lg" 
+              disabled={currentStock === 0}
+            />
 
             <div className="mt-12 pt-12 border-t border-border space-y-6">
               <div>
