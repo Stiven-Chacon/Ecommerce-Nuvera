@@ -6,24 +6,25 @@ import Link from "next/link"
 import { Minus, Plus, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { updateCartItemQuantity, removeFromCart } from "@/lib/actions/cart"
-import { CartItem } from "@/lib/products/products-types"
+import type { CartItem } from "@/lib/actions/cart"
+import type { Product } from "@/lib/products/products-types"
 
 interface CartItemProps {
-  item: CartItem & { product: any }
+  item: CartItem & { product: Product }
 }
 
 export function CartItemComponent({ item }: CartItemProps) {
   const [isUpdating, setIsUpdating] = useState(false)
 
-  async function handleUpdateQuantity(newQuantity: number) {
+  function handleUpdateQuantity(newQuantity: number) {
     setIsUpdating(true)
-    await updateCartItemQuantity(item.id, newQuantity)
+    updateCartItemQuantity(item.id, newQuantity)
     setIsUpdating(false)
   }
 
-  async function handleRemove() {
+  function handleRemove() {
     setIsUpdating(true)
-    await removeFromCart(item.id)
+    removeFromCart(item.id)
     setIsUpdating(false)
   }
 
