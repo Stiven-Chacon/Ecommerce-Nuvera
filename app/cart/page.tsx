@@ -8,19 +8,25 @@ import { Header } from "@/components/layout/headers"
 import { Footer } from "@/components/layout/footer"
 import { CartItemComponent } from "@/components/ui/cart-item"
 import { useEffect, useState } from "react"
+import type { CartWithProducts } from "@/lib/actions/cart"
 
 export default function CartPage() {
-  const [cartData, setCartData] = useState({ items: [], total: 0 })
+  const [cartData, setCartData] = useState<CartWithProducts>({ items: [], total: 0 })
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Cargar datos del carrito
-    const data = getCartItems()
-    setCartData(data)
-    setLoading(false)
+    // Función para cargar datos del carrito
+    function loadCart() {
+      const data = getCartItems()
+      setCartData(data)
+      setLoading(false)
+    }
+
+    // Cargar inicialmente
+    loadCart()
 
     // Escuchar cambios en el carrito
-    const handleCartUpdate = () => {
+    function handleCartUpdate() {
       setCartData(getCartItems())
     }
 
