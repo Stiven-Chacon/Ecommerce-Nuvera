@@ -32,7 +32,7 @@ export function CartItemComponent({ item }: CartItemProps) {
 
   return (
     <div className="flex gap-4 py-6 border-b border-border">
-      <Link href={`/productos/${item.product.id}`} className="relative w-24 h-32 flex-shrink-0 bg-muted">
+      <Link href={`/products/${item.product.id}`} className="relative w-24 h-32 flex-shrink-0 bg-muted">
         <Image
           src={item.product.images[0] || "/placeholder.svg?height=200&width=150"}
           alt={item.product.name}
@@ -43,7 +43,7 @@ export function CartItemComponent({ item }: CartItemProps) {
 
       <div className="flex-1 flex flex-col justify-between">
         <div>
-          <Link href={`/productos/${item.product.id}`} className="font-medium hover:text-muted-foreground">
+          <Link href={`/products/${item.product.id}`} className="font-medium hover:text-muted-foreground">
             {item.product.name}
           </Link>
           <p className="text-sm text-muted-foreground mt-1">${item.product.price.toFixed(2)}</p>

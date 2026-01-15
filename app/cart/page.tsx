@@ -61,7 +61,7 @@ export default function CartPage() {
             <h2 className="font-serif text-2xl font-bold mb-2">Tu carrito está vacío</h2>
             <p className="text-muted-foreground mb-6">Agrega productos para comenzar tu compra</p>
             <Button asChild>
-              <Link href="/productos">Explorar Productos</Link>
+              <Link href="/products">Explorar Productos</Link>
             </Button>
           </div>
         ) : (
@@ -98,7 +98,7 @@ export default function CartPage() {
                 </Button>
 
                 <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/productos">Continuar Comprando</Link>
+                  <Link href="/products">Continuar Comprando</Link>
                 </Button>
               </div>
             </div>
