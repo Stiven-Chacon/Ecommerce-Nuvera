@@ -4,24 +4,30 @@ import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/headers"
 import { CheckoutForm } from "@/components/ui/checkout-form"
 import { getCartItems } from "@/lib/actions/cart"
+import type { CartWithProducts } from "@/lib/actions/cart"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
 export default function CheckoutPage() {
   const router = useRouter()
-  const [cartData, setCartData] = useState<{ items: any[], total: number } | null>(null)
+  const [cartData, setCartData] = useState<CartWithProducts | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const { items, total } = getCartItems()
-    
-    if (items.length === 0) {
-      router.push("/carrito")
-      return
+    // Función interna para cargar el carrito
+    function loadCart() {
+      const data = getCartItems()
+      
+      if (data.items.length === 0) {
+        router.push("/cart")
+        return
+      }
+      
+      setCartData(data)
+      setLoading(false)
     }
-    
-    setCartData({ items, total })
-    setLoading(false)
+
+    loadCart()
   }, [router])
 
   if (loading || !cartData) {

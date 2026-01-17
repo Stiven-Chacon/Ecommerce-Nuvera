@@ -1,16 +1,27 @@
 "use client"
 
+interface ShippingAddress {
+  name: string
+  address: string
+  city: string
+  postalCode: string
+  country: string
+}
+
+interface CartItem {
+  productId: string
+  quantity: number
+  product?: {
+    name?: string
+    price?: number
+  }
+}
+
 interface Order {
   id: string
   total: number
   status: string
-  shipping_address: {
-    name: string
-    address: string
-    city: string
-    postalCode: string
-    country: string
-  }
+  shipping_address: ShippingAddress
   items: Array<{
     product_id: string
     quantity: number
@@ -48,8 +59,8 @@ function saveOrder(order: Order): void {
 export function saveOrderLocally(
   orderId: string,
   paymentIntentId: string,
-  shippingAddress: any,
-  cartItems: any[],
+  shippingAddress: ShippingAddress,
+  cartItems: CartItem[],
   total: number
 ) {
   const order: Order = {
