@@ -21,6 +21,7 @@ interface Order {
   id: string
   total: number
   status: string
+  payment_intent_id?: string
   shipping_address: ShippingAddress
   items: Array<{
     product_id: string
@@ -67,6 +68,7 @@ export function saveOrderLocally(
     id: orderId,
     total,
     status: "completed",
+    payment_intent_id: paymentIntentId,
     shipping_address: shippingAddress,
     items: cartItems.map((item) => ({
       product_id: item.productId,
