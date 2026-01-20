@@ -197,15 +197,18 @@ export default function OrdersPage() {
     return result
   }, [orders, searchQuery, statusFilter, sortBy])
 
+  // Reset page when filters change
+  const actualPage = useMemo(() => {
+    return 1
+  }, [searchQuery, statusFilter, sortBy])
+
+  const effectivePage = searchQuery || statusFilter !== "all" || sortBy !== "newest" ? actualPage : currentPage
+
   const totalPages = Math.ceil(filteredAndSortedOrders.length / ITEMS_PER_PAGE)
   const paginatedOrders = filteredAndSortedOrders.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+    (effectivePage - 1) * ITEMS_PER_PAGE,
+    effectivePage * ITEMS_PER_PAGE
   )
-
-  useEffect(() => {
-    setCurrentPage(1)
-  }, [searchQuery, statusFilter, sortBy])
 
   if (loading) {
     return (
@@ -230,7 +233,7 @@ export default function OrdersPage() {
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-b from-gray-900 to-gray-700 bg-clip-text text-transparent mb-3">
+            <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-3">
               Mis Pedidos
             </h1>
             <p className="text-gray-600 text-lg">
@@ -253,8 +256,8 @@ export default function OrdersPage() {
                 seguimiento
               </p>
               <Link
-                href="/products"
-                className="inline-flex items-center justify-center bg-linear-to-b from-black to-gray-800 text-white px-8 py-3 rounded-xl font-medium hover:shadow-lg transform hover:scale-105 transition-all"
+                href="/productos"
+                className="inline-flex items-center justify-center bg-linear-to-r from-black to-gray-800 text-white px-8 py-3 rounded-xl font-medium hover:shadow-lg transform hover:scale-105 transition-all"
               >
                 Explorar Productos
               </Link>
@@ -418,7 +421,7 @@ export default function OrdersPage() {
                               <div className="flex items-center gap-4">
                                 <div className="text-right">
                                   <p className="text-xs text-gray-500 mb-1 font-medium">Total</p>
-                                  <p className="text-2xl font-bold bg-linear-to-b from-gray-900 to-gray-700 bg-clip-text text-transparent">
+                                  <p className="text-2xl font-bold bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                                     ${order.total.toFixed(2)}
                                   </p>
                                 </div>
@@ -523,13 +526,13 @@ export default function OrdersPage() {
                   {totalPages > 1 && (
                     <div className="mt-8 flex items-center justify-between bg-white p-4 rounded-xl shadow-md border border-gray-200">
                       <p className="text-sm text-gray-600 font-medium">
-                        Página <span className="font-bold text-gray-900">{currentPage}</span> de{" "}
+                        Página <span className="font-bold text-gray-900">{effectivePage}</span> de{" "}
                         <span className="font-bold text-gray-900">{totalPages}</span>
                       </p>
                       <div className="flex items-center gap-2">
                         <Button
                           onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
-                          disabled={currentPage === 1}
+                          disabled={effectivePage === 1}
                           variant="outline"
                           size="sm"
                           className="border-2 font-medium disabled:opacity-50"
@@ -539,7 +542,7 @@ export default function OrdersPage() {
                         </Button>
                         <Button
                           onClick={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
-                          disabled={currentPage === totalPages}
+                          disabled={effectivePage === totalPages}
                           variant="outline"
                           size="sm"
                           className="border-2 font-medium disabled:opacity-50"
