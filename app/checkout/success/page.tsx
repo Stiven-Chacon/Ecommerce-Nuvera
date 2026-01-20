@@ -24,7 +24,7 @@ export default function CheckoutSuccessPage({
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="/cuenta/pedidos">Ver Mis Pedidos</Link>
+              <Link href="/account/orders">Ver Mis Pedidos</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="bg-transparent">
               <Link href="/products">Volver a la Tienda</Link>

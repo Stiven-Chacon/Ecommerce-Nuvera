@@ -4,6 +4,6 @@ import { revalidatePath } from "next/cache"
 
 export async function revalidateCheckout() {
   revalidatePath("/cart")
-  revalidatePath("/cuenta/pedidos")
+  revalidatePath("/account/orders")
   revalidatePath("/checkout")
 }
