@@ -256,7 +256,7 @@ export default function OrdersPage() {
                 seguimiento
               </p>
               <Link
-                href="/productos"
+                href="/products"
                 className="inline-flex items-center justify-center bg-linear-to-r from-black to-gray-800 text-white px-8 py-3 rounded-xl font-medium hover:shadow-lg transform hover:scale-105 transition-all"
               >
                 Explorar Productos
